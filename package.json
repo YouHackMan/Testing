@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "-": "^0.0.1",
+    "chai": "^4.3.7",
+    "g": "^2.0.1",
+    "mocha": "^10.4.0",
+    "npx": "^10.2.2",
+    "selenium-webdriver": "^4.20.0"
+  },
+  "scripts": {
+    "test": "mocha --recursive --timeout 60000"
+  },
+  "devDependencies": {
+    "allure-commandline": "^2.29.0",
+    "allure-mocha": "^2.15.1"
+  },
+  "mocha": {
+    "parallel": false,
+    "reporter": "allure-mocha",
+    "reporterOptions": {
+      "resultsDir": "allure-results"
+    }
+  }
+}
